@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "f401cc debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/bin/stm32_f4ve_playground.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            // "runToEntryPoint": "Simple_Stm32_Project",
+            // "svdFile": "${workspaceRoot}/config/svd/STM32F405.svd",
+            // "preLaunchTask": "ada: Build current project",
+            "configFiles": [
+                "${workspaceRoot}/openocd.cfg"
+            ]
+        },
+    ]
+}

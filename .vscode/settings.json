@@ -1,0 +1,4 @@
+{
+    "ada.projectFile": "stm32_f4ve_playground.gpr",
+    "cortex-debug.gdbPath": "${env:GNAT_ARM_ELF_ALIRE_PREFIX}/bin/arm-eabi-gdb",
+}

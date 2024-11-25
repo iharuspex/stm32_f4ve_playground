@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Alire build",
+            "type": "shell",
+            "command": "alr build"
+        },
+        {
+            "label": "OpenOCD flash",
+            "type": "shell",
+            "command": "openocd -f openocd.cfg -c \"program bin/simple_stm32_project.elf verify reset exit\"",
+            "dependsOn":["Alire build"]
+        }
+    ]
+}
